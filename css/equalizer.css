@@ -1,0 +1,20 @@
+.stage-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	border: 1px solid #ddd;
+}
+
+.eq {
+	width: 200px;
+	height: 200px;
+	display: flex;
+	align-items: flex-end;
+}
+.eq > div {
+	flex: 20% 0 0;
+	height: 2%;
+	background-color: red;
+	border: 1px solid rgb(231, 79, 79);
+}
