@@ -33,12 +33,41 @@
 			<button id="btInit" class="btn btn-success mx-1">준비</button>
 			<button id="btStart" class="btn btn-primary mx-1">경주시작</button>
 			<button id="btReset" class="btn btn-danger mx-1">초기화</button>
+			<button id="btModal" class="btn btn-dark mx-1">경주결과 다시보기</button>
 		</div>
 		<div class="stage-wrap wrapper">
 			
 		</div>
 	</main>
-	<!--  -->
+	<!-- Modal -->
+	<div class="modal fade" id="scoreModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">게임 결과!</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+				</div>
+				<div class="modal-body">
+					<table class="table table-bordered" id="scoreTb">
+						<thead>
+							<tr class="bg-danger text-light">
+								<th class="w-25">순위</th>
+								<th>선수</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Footer -->
 	<footer class="footer"></footer>
 	<script src="./js/index.js"></script>

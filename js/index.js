@@ -12,6 +12,7 @@ for(i=0; i<9; i++) imgs.push('./img/c'+i+'.png');
 $("#btInit").click(init);
 $("#btReset").click(reset);
 $("#btStart").click(start);
+$("#btModal").click(modalShow);
 
 
 // 이벤트 콜백
@@ -20,7 +21,17 @@ function start() {
 		rnd = Math.random() * 1000 + 2000;
 		$(".player").eq(i).stop().animate({"left": "90%"}, rnd, function(){
 			players.push($(this).index());
-			console.log(players);
+			if(players.length == cnt) {
+				for(var i=0; i<players.length; i++) {
+					html 	= '<tr>';
+					html += '<td>'+(i+1)+'등</td>';
+					html += '<td>'+(players[i]+1)+'번</td>';
+					html += '</tr>';
+					$("#scoreTb > tbody").append(html);
+				}
+				$("#scoreModal").modal('show');
+				$("#btModal").show();
+			}
 		});
 	}
 }
@@ -48,5 +59,11 @@ function reset() {
 	$("#btReset").hide();
 	$("#cnt").val(4);
 	players = [];
+	$("#scoreTb > tbody").empty();
+	$("#btModal").hide();
+}
+
+function modalShow() {
+	$("#scoreModal").modal('show');
 }
 

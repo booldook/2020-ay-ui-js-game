@@ -11,7 +11,7 @@ html, body {font-size: 16px; font-family: 'Noto Sans KR', sans-serif;}
 /* Main */
 .main-wrap {margin: 1rem 0;}
 .ui-wrap {padding: 1rem;}
-#btStart, #btReset {display: none;}
+#btStart, #btReset, #btModal {display: none;}
 .stage-wrap {padding: 1rem;}
 .player {width: 120px; height: 120px; padding: 10px; position: relative;}
 .player > .badge {position: absolute; top: 0; left: 0;}
@@ -21,6 +21,13 @@ html, body {font-size: 16px; font-family: 'Noto Sans KR', sans-serif;}
 	25% {transform: rotate(20deg);}
 	75% {transform: rotate(-20deg);}
 }
+
+/* Modal */
+.modal-body > .table > tbody > tr > :first-child {
+	background-color: #eee;}
+.modal-body > .table > tbody > tr > :last-child {
+	font-size: 1.25rem; font-weight: bold;}
+
 
 /* Footer */
 
