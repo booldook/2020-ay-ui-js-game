@@ -11,7 +11,16 @@ html, body {font-size: 16px; font-family: 'Noto Sans KR', sans-serif;}
 /* Main */
 .main-wrap {margin: 1rem 0;}
 .ui-wrap {padding: 1rem;}
+#btStart, #btReset {display: none;}
 .stage-wrap {padding: 1rem;}
+.player {width: 120px; height: 120px; padding: 10px; position: relative;}
+.player > .badge {position: absolute; top: 0; left: 0;}
+.player > img {animation-name: run; animation-duration: 0.75s; animation-iteration-count: infinite; animation-timing-function: linear; transform-origin: bottom;}
+@keyframes run {
+	0%, 100% {transform: rotate(0deg);}
+	25% {transform: rotate(20deg);}
+	75% {transform: rotate(-20deg);}
+}
 
 /* Footer */
 
