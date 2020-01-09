@@ -1,11 +1,17 @@
 /* Common */
-
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap');
+html, body {font-size: 16px; font-family: 'Noto Sans KR', sans-serif;}
+.wrapper {max-width: 900px; margin: 0 auto;}
 
 /* Header */
-
+.header {display: flex; justify-content: flex-start; align-items: center; padding: 1rem; border: 1px solid #ccc;}
+.header > .logo {width: 40px; height: 40px; margin-right: 0.75rem;}
+.header > .title {font-size: 1.5rem;}
 
 /* Main */
-
+.main-wrap {margin: 1rem 0;}
+.ui-wrap {padding: 1rem;}
+.stage-wrap {padding: 1rem;}
 
 /* Footer */
 
